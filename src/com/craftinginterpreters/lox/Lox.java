@@ -31,7 +31,7 @@ public class Lox {
     if (hadError) System.exit(65);
   }
 
-  //Runs line by line commands. Exits when ctrl-D entered.
+  //REPL. Exits when ctrl-D entered. (its supposed to. Mine exits on ctrl-C)
   private static void runPrompt() throws IOException {
     hadError = false;
     InputStreamReader input = new InputStreamReader(System.in);
